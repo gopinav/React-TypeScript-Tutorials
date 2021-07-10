@@ -9,6 +9,8 @@ import { Input } from './components/props/Input'
 import { Container } from './components/props/Container'
 import { ThemeContextProvider } from './components/context/ThemeContext'
 import { Box } from './components/context/Box'
+import { UserContextProvider } from './components/context/UserContext'
+import { User } from './components/context/User'
 
 import './App.css'
 
@@ -53,6 +55,9 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   )
 }
