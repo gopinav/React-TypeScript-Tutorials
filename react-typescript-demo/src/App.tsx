@@ -16,6 +16,7 @@ import { MutableRef } from './components/refs/MutableRef'
 import './App.css'
 import { Counter } from './components/class/Counter'
 import { List } from './components/generics/List'
+import { Toast } from './components/templateliterals/Toast'
 
 function App() {
   const personName = {
@@ -89,6 +90,7 @@ function App() {
         ]}
         onClick={item => console.log(item)}
       />
+      <Toast position='center' />
     </div>
   )
 }
