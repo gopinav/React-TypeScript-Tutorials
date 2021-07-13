@@ -10,7 +10,7 @@ export const List = <T extends { id: number }>({
   return (
     <div>
       <h2>List of items</h2>
-      {items.map((item, index) => {
+      {items.map(item => {
         return (
           <div key={item.id} onClick={() => onClick(item)}>
             {item}
