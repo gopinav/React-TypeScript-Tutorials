@@ -17,6 +17,7 @@ import './App.css'
 import { Counter } from './components/class/Counter'
 import { List } from './components/generics/List'
 import { Toast } from './components/templateliterals/Toast'
+import { CustomButton } from './components/html/Button'
 
 function App() {
   const personName = {
@@ -91,6 +92,9 @@ function App() {
         onClick={item => console.log(item)}
       />
       <Toast position='center' />
+      <CustomButton variant='primary' onClick={() => console.log('Clicked')}>
+        Button Label
+      </CustomButton>
     </div>
   )
 }
