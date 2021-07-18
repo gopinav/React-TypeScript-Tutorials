@@ -18,6 +18,7 @@ import { Counter } from './components/class/Counter'
 import { List } from './components/generics/List'
 import { Toast } from './components/templateliterals/Toast'
 import { CustomButton } from './components/html/Button'
+import { RandomNumber } from './components/restriction/RandomNumber'
 
 function App() {
   const personName = {
@@ -95,6 +96,7 @@ function App() {
       <CustomButton variant='primary' onClick={() => console.log('Clicked')}>
         Button Label
       </CustomButton>
+      <RandomNumber value={10} isPositive />
     </div>
   )
 }
