@@ -19,6 +19,7 @@ import { List } from './components/generics/List'
 import { Toast } from './components/templateliterals/Toast'
 import { CustomButton } from './components/html/Button'
 import { RandomNumber } from './components/restriction/RandomNumber'
+import { Text } from './components/polymorphic/Text'
 
 function App() {
   const personName = {
@@ -97,6 +98,15 @@ function App() {
         Button Label
       </CustomButton>
       <RandomNumber value={10} isPositive />
+      <Text size='lg' as='h1'>
+        Heading
+      </Text>
+      <Text size='md' as='p'>
+        Paragraph
+      </Text>
+      <Text size='sm' color='secondary' as='label' htmlFor='someId'>
+        Label
+      </Text>
     </div>
   )
 }
